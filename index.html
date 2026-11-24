@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>김별올 | AI 기획자</title>
+<meta name="description" content="AI를 기획하는 기획자, 김별올의 프로필 페이지입니다." />
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          coral: {
+            50: '#fff5f2',
+            100: '#ffe4db',
+            200: '#fbc7b8',
+            300: '#f7a38c',
+            400: '#f17f5f',
+            500: '#e85f3b',
+            600: '#cc4526',
+            700: '#a8371e',
+          },
+          mint: {
+            50: '#ecfdf7',
+            100: '#d2f9ea',
+            200: '#a6f3d6',
+            300: '#6fe6be',
+            400: '#3ad1a3',
+            500: '#1fb78a',
+            600: '#159271',
+          },
+        },
+        fontFamily: {
+          sans: ['Pretendard', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased">
+
+<!-- Header / Navigation -->
+<header id="header" class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md transition-shadow">
+  <nav class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="#top" class="text-2xl font-bold text-slate-900 tracking-tight">
+      김별올<span class="text-coral-500">.</span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-10 ml-auto">
+      <ul class="flex items-center gap-9 text-sm font-medium uppercase tracking-widest text-slate-400">
+        <li><a href="#about" class="nav-link hover:text-coral-500 transition-colors">소개</a></li>
+        <li><a href="#skills" class="nav-link hover:text-coral-500 transition-colors">기술 스택</a></li>
+        <li><a href="#projects" class="nav-link hover:text-coral-500 transition-colors">프로젝트</a></li>
+        <li><a href="#contact" class="nav-link hover:text-coral-500 transition-colors">연락처</a></li>
+      </ul>
+
+      <a href="#contact" class="inline-flex items-center rounded-full border border-coral-200 px-5 py-2 text-sm font-semibold text-coral-600 hover:bg-coral-500 hover:text-white hover:border-coral-500 transition-colors">
+        연락하기
+      </a>
+    </div>
+
+    <button id="menu-btn" aria-label="메뉴 열기" class="md:hidden p-2 -mr-2 text-slate-700">
+      <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden hidden border-t border-slate-100 bg-white">
+    <ul class="flex flex-col px-6 py-4 gap-4 text-sm font-medium uppercase tracking-widest text-slate-500">
+      <li><a href="#about" class="nav-link block">소개</a></li>
+      <li><a href="#skills" class="nav-link block">기술 스택</a></li>
+      <li><a href="#projects" class="nav-link block">프로젝트</a></li>
+      <li><a href="#contact" class="nav-link block">연락처</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero / About -->
+  <section id="about" class="relative pt-40 pb-24 sm:pb-32 px-6 lg:px-12 overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-coral-50 via-coral-50/40 to-white"></div>
+
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <div class="fade-in">
+        <p class="text-sm font-semibold tracking-[0.2em] uppercase text-coral-500 mb-6">AI 기획자 · 2026</p>
+        <h1 class="text-5xl sm:text-7xl font-bold tracking-tight text-slate-900 leading-[1.05]">
+          김별올
+        </h1>
+        <p class="mt-6 text-lg text-slate-500 max-w-md leading-relaxed">
+          AI를 기획하는 기획자입니다.
+        </p>
+
+        <div class="mt-10 flex flex-wrap items-center gap-4">
+          <a href="#projects" class="inline-flex items-center justify-center rounded-full bg-coral-500 px-7 py-3 text-white font-semibold shadow-lg shadow-coral-500/25 hover:bg-coral-600 hover:shadow-coral-600/30 transition-all">
+            포트폴리오 보기
+          </a>
+          <a href="#contact" class="inline-flex items-center justify-center rounded-full px-7 py-3 text-slate-600 font-semibold border border-slate-200 hover:border-coral-300 hover:text-coral-600 transition-all">
+            연락하기
+          </a>
+        </div>
+      </div>
+
+      <div class="fade-in relative">
+        <div class="absolute -z-10 -top-10 -right-10 h-48 w-48 rounded-full bg-coral-200 blur-3xl opacity-50"></div>
+        <div class="absolute -z-10 -bottom-10 -left-10 h-44 w-44 rounded-full bg-mint-200 blur-3xl opacity-50"></div>
+
+        <div class="rounded-2xl border border-black/5 shadow-2xl shadow-coral-900/10 overflow-hidden bg-white">
+          <div class="flex items-center gap-1.5 border-b border-slate-100 px-4 py-3 bg-slate-50">
+            <span class="h-2.5 w-2.5 rounded-full bg-coral-300"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-amber-200"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-mint-300"></span>
+          </div>
+          <div class="p-6">
+            <p class="text-xs font-semibold text-slate-400 mb-4">AI 기획 워크스페이스</p>
+            <div class="grid grid-cols-3 gap-3">
+              <div class="aspect-square rounded-lg bg-coral-100"></div>
+              <div class="aspect-square rounded-lg bg-mint-100"></div>
+              <div class="aspect-square rounded-lg bg-slate-100"></div>
+              <div class="aspect-square rounded-lg bg-mint-200"></div>
+              <div class="aspect-square rounded-lg bg-slate-100"></div>
+              <div class="aspect-square rounded-lg bg-coral-200"></div>
+            </div>
+            <div class="mt-5 inline-flex h-9 items-center rounded-full bg-mint-400 px-5 text-xs font-semibold text-white">
+              기획 완료 94%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14 fade-in">
+        <p class="text-sm font-semibold tracking-[0.2em] uppercase text-coral-500 mb-3">Skills</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">기술 스택</h2>
+        <p class="mt-3 text-slate-500">AI 기획 업무에 활용하는 주요 도구입니다.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div class="fade-in group rounded-2xl border border-slate-100 bg-slate-50/60 p-8 text-center hover:border-mint-200 hover:bg-mint-50/60 hover:-translate-y-1 transition-all duration-300">
+          <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-mint-500 text-white shadow-md shadow-mint-500/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.14 6.14l-2.12-2.12M8.98 8.98L6.86 6.86m10.28 0l-2.12 2.12M8.98 15.02l-2.12 2.12" />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Python</h3>
+          <p class="mt-1 text-sm text-slate-500">데이터 분석 &amp; 자동화</p>
+        </div>
+
+        <div class="fade-in group rounded-2xl border border-slate-100 bg-slate-50/60 p-8 text-center hover:border-coral-200 hover:bg-coral-50/60 hover:-translate-y-1 transition-all duration-300">
+          <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-coral-500 text-white shadow-md shadow-coral-500/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L15 12l-5.25-5M4.5 6.75h.008M4.5 12h.008M4.5 17.25h.008" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Claude</h3>
+          <p class="mt-1 text-sm text-slate-500">AI 서비스 기획 &amp; 프롬프트 설계</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 px-6 bg-slate-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14 fade-in">
+        <p class="text-sm font-semibold tracking-[0.2em] uppercase text-coral-500 mb-3">Portfolio</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">프로젝트</h2>
+        <p class="mt-3 text-slate-500">기획하고 만들어온 프로젝트들을 소개합니다.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <article class="group fade-in flex flex-col rounded-2xl bg-white border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-coral-100 hover:border-coral-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="h-40 overflow-hidden bg-gradient-to-br from-coral-400 to-coral-300 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white/90 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
+            </svg>
+          </div>
+          <div class="flex flex-col flex-1 p-6">
+            <h3 class="text-lg font-bold text-slate-900 transition-colors group-hover:text-coral-600">AI 서비스 기획 프레임워크</h3>
+            <p class="mt-2 text-sm text-slate-500 flex-1 leading-relaxed">
+              AI 프로덕트 기획 과정을 표준화한 문서 &amp; 워크플로우 템플릿입니다.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-coral-50 text-coral-600 text-xs font-semibold px-3 py-1">기획</span>
+              <span class="rounded-full bg-mint-50 text-mint-600 text-xs font-semibold px-3 py-1">Claude</span>
+            </div>
+            <a href="#" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-coral-600 hover:text-coral-700">
+              자세히 보기
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="group fade-in flex flex-col rounded-2xl bg-white border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-mint-100 hover:border-mint-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="h-40 overflow-hidden bg-gradient-to-br from-mint-400 to-mint-300 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white/90 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21M6.75 6.75h10.5v10.5H6.75V6.75z" />
+            </svg>
+          </div>
+          <div class="flex flex-col flex-1 p-6">
+            <h3 class="text-lg font-bold text-slate-900 transition-colors group-hover:text-mint-600">데이터 자동 리포트 봇</h3>
+            <p class="mt-2 text-sm text-slate-500 flex-1 leading-relaxed">
+              Python 기반으로 지표 데이터를 수집·요약해 주간 리포트를 자동 생성합니다.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-mint-50 text-mint-600 text-xs font-semibold px-3 py-1">Python</span>
+              <span class="rounded-full bg-coral-50 text-coral-600 text-xs font-semibold px-3 py-1">자동화</span>
+            </div>
+            <a href="#" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-coral-600 hover:text-coral-700">
+              자세히 보기
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="group fade-in flex flex-col rounded-2xl bg-white border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-coral-100 hover:border-coral-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="h-40 overflow-hidden bg-gradient-to-br from-coral-500 to-mint-400 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white/90 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 10.5h8m-8 3h5m-9 6l2.25-4.5A9.735 9.735 0 013 12C3 6.477 7.477 2 13 2s10 4.477 10 10-4.477 10-10 10a9.735 9.735 0 01-4-.85L5 21z" />
+            </svg>
+          </div>
+          <div class="flex flex-col flex-1 p-6">
+            <h3 class="text-lg font-bold text-slate-900 transition-colors group-hover:text-coral-600">AI 챗봇 기획안</h3>
+            <p class="mt-2 text-sm text-slate-500 flex-1 leading-relaxed">
+              Claude 기반 사내 문의 응대 챗봇의 기능 정의와 대화 플로우를 설계했습니다.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-mint-50 text-mint-600 text-xs font-semibold px-3 py-1">Claude</span>
+              <span class="rounded-full bg-coral-50 text-coral-600 text-xs font-semibold px-3 py-1">기획</span>
+            </div>
+            <a href="#" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-coral-600 hover:text-coral-700">
+              자세히 보기
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6 bg-white">
+    <div class="max-w-2xl mx-auto text-center fade-in">
+      <p class="text-sm font-semibold tracking-[0.2em] uppercase text-coral-500 mb-3">Contact</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">연락처</h2>
+      <p class="mt-3 text-slate-500">함께 이야기 나누고 싶으신가요? 언제든 편하게 연락 주세요.</p>
+
+      <div class="mt-10 inline-flex flex-col sm:flex-row items-center gap-8 rounded-2xl border border-slate-100 bg-slate-50 p-8">
+        <div class="flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-full bg-coral-500 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+          </div>
+          <span id="email-text" class="font-semibold text-slate-800">comestar@gmail.com</span>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <a href="mailto:comestar@gmail.com" class="rounded-full bg-coral-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-coral-600 transition-colors">
+            메일 보내기
+          </a>
+          <button id="copy-btn" class="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-600 hover:border-coral-300 hover:text-coral-600 transition-colors">
+            복사하기
+          </button>
+        </div>
+      </div>
+      <p id="copy-toast" class="mt-4 text-sm font-medium text-coral-600 opacity-0 transition-opacity duration-300">이메일 주소가 복사되었습니다!</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-t border-slate-100 py-16 px-6 text-center text-sm text-slate-400">
+  &copy; <span id="year"></span> 김별올. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

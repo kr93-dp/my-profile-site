@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: 'Inter', 'Pretendard', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Scroll fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header shadow once page is scrolled */
+#header.scrolled {
+  box-shadow: 0 1px 12px rgba(15, 23, 42, 0.06);
+}
+
+/* Active nav link */
+.nav-link.active {
+  color: #e85f3b;
+  font-weight: 700;
+}
